@@ -1,0 +1,48 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background: linear-gradient(180deg, #2b03a2, #3a06d6); /* Match Sidebar Gradient */
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+/* Navbar Title */
+.navbar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex: 1;
+    text-align: center;
+    color: white; /* Ensure text remains white */
+}
+
+/* Notification Icon */
+.notification-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.bell-icon {
+    font-size: 1.5rem;
+    color: white; /* Ensure icon remains white */
+    cursor: pointer;
+}
+
+/* Notification Count */
+.notification-count {
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    background: red;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 3px 7px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}

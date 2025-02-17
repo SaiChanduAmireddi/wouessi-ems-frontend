@@ -1,0 +1,118 @@
+/* Sidebar Container */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(180deg, #2b03a2, #3a06d6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 0 15px 15px 0;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Makes sidebar content take up full space and pushes logout to the bottom */
+.sidebar-content {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Sidebar Header */
+.sidebar-header h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Profile Section */
+.sidebar-profile {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.profile-image {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    padding: 3px;
+    background: white;
+    margin-bottom: 0.5rem;
+}
+
+.sidebar-profile h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+}
+
+.sidebar-profile p {
+    font-size: 1rem;
+    opacity: 0.85;
+}
+
+/* Navigation */
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar-nav ul li {
+    margin: 0.4rem 0;
+}
+
+.sidebar-nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0.8rem;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: 500;
+}
+
+.sidebar-nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+}
+
+/* Ensures logout stays at the bottom */
+.sidebar-footer {
+    margin-top: auto;
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logout Button */
+.logout-btn {
+    background: white;
+    color: #2b03a2;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 80%;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+.logout-btn:hover {
+    background: #d9534f;
+    color: white;
+    transform: scale(1.05);
+}
